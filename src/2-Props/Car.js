@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Car = ({definition,addition}) => {
+const Car = (props) => {
   return (
-    <div>Car </div>
+    <div>
+        {/* <h2>I am a {props.brand}</h2>  */}
+        <h2>I am a {props.brand.name} and {props.brand.model}</h2>
+    </div>
   )
 }
 
