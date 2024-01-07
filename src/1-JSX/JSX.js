@@ -3,13 +3,14 @@
 
 const JSX=()=> {
     const name ="hakan"
+    const myElement = <h1 style={{color:"red"}}>I love JSX</h1>
+    const myElement1= <h1>React is{5+5} times better than JSX</h1>
+    const myElement2 ={}
     return(
         <div className="App">
-            {/* This is JSX component */}
-            <h1 className="hakan">Hello {name}</h1>
-            <h1>{10+10}</h1>
-            <h1>{name.toUpperCase()}</h1>
-            <h2 style={{color:"red"}}>Ahmet</h2>
+            {myElement}
+            {myElement1}
+           
         </div>
     )
 }
