@@ -9,7 +9,7 @@ const Props = () => {
     //     name : "Ford",
     //     model: "Mustang"
     // }
-    const myElement3 = <Car brand={carInfo}/>
+    // const myElement3 = <Car brand={carInfo}/>
 
     const person = {
         name :"Hakan",
@@ -26,13 +26,14 @@ const Props = () => {
         person, myCar
     }
 
-    const  myElement4 = <Car definition={myProps}/>
+    const  myElement4 = <Car definition={myProps} addition={myCar}/>
 
     return (
     <>
     {/* {myElement}
     {myElement2} */}
-    {myElement3}
+    {/* {myElement3} */}
+    {myElement4}
 
     </>
    ) 
