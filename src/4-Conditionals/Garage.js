@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Garage = () => {
+const Garage = ({cars}) => {
+    // const cars = props.cars
+
   return (
-    <div>Garage</div>
+    <div>
+        <h1>Garage</h1>
+        {/* {cars.length > 0 && <h2>You have {cars.length} cars in your garage</h2>} */}
+        {cars?.length > 0 && <h2>You have {cars.length} cars in your garage</h2>}
+        {/* If ? added will not return error Because it aims first check then return */}
+    </div>
   )
 }
 

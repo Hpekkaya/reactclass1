@@ -5,19 +5,19 @@ import MissedGoal from './MissedGoal'
 const Goal = (props) => {
     const isGoal = props.isGoal
 
-    if(isGoal){
+    // if(isGoal){
         
-        return <MadeGoal/>
-    }else{
+    //     return <MadeGoal/>
+    // }else{
 
-        return <MissedGoal/>
+    //     return <MissedGoal/>
+    // }     
+//   return (
+//     <div>Goal</div>
+//   )
 
-    }
+    return <>{isGoal ? <MadeGoal/> : <MissedGoal/> }</>
 
-    
-  return (
-    <div>Goal</div>
-  )
 }
 
 export default Goal
