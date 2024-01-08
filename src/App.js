@@ -1,6 +1,7 @@
 
 import JSX from "./1-JSX/JSX"
 import Props from "./2-Props/Props";
+import Events from "./3-Events/Events";
 // import './index.css';
 
 
@@ -9,7 +10,8 @@ function App() {
        <div>
           {/* <p>This is the First React Application </p> */}
           {/* <JSX/> */}
-          <Props/>
+          {/* <Props/> */}
+          <Events/>
        </div>
       );
     }
