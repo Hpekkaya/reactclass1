@@ -19,7 +19,7 @@ function App() {
           {/* <Conditionals/> */}
           {/* <List/> */}
           {/* <UseStateHook/> */}
-          <UseEffectHook/>
+          <UseEffectHook/>  {/* Management of the changes */}
        </div>
       );
     }
