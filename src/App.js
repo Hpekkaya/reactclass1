@@ -4,6 +4,7 @@ import Props from "./2-Props/Props";
 import Events from "./3-Events/Events";
 import Conditionals from "./4-Conditionals/Conditionals";
 import List from "./5-List/List";
+import UseStateHook from "./6-UseStateHook/UseStateHook";
 // import './index.css';
 
 
@@ -15,7 +16,8 @@ function App() {
           {/* <Props/> */}
           {/* <Events/> */}
           {/* <Conditionals/> */}
-          <List/>
+          {/* <List/> */}
+          <UseStateHook/>
        </div>
       );
     }
