@@ -3,6 +3,7 @@ import JSX from "./1-JSX/JSX"
 import Props from "./2-Props/Props";
 import Events from "./3-Events/Events";
 import Conditionals from "./4-Conditionals/Conditionals";
+import List from "./5-List/List";
 // import './index.css';
 
 
@@ -13,7 +14,8 @@ function App() {
           {/* <JSX/> */}
           {/* <Props/> */}
           {/* <Events/> */}
-          <Conditionals/>
+          {/* <Conditionals/> */}
+          <List/>
        </div>
       );
     }
