@@ -13,19 +13,32 @@ const UseEffectHook = () => {
     // Using of useEffect in this way, run it once for the first time,
     // Afterwards, run it again every time you render.
 
-    useEffect(()=>{
-        setTimeout(()=>{
-            setCount(count=>count+1)
-        },1000)
-    },[])  // It runs only one times
+    // useEffect(()=>{
+    //     setTimeout(()=>{
+    //         setCount(count=>count+1)
+    //     },1000)
+    // },[])  // It runs only one times
 
-    useEffect(()=>{
-        setTimeout(()=>{
-            setCount2(count=>count+1)
-        },1000)
-    },[count2])  
+    // useEffect(()=>{
+    //     setTimeout(()=>{
+    //         setCount2(count=>count+1)
+    //     },1000)
+    // },[count2])  
     // useEffect, which renders according to a dependency. 
     // it works once, then it works as the dependency changes
+
+    useEffect(()=>{
+        setInterval(()=>{
+            setCount(count=>count+1)
+        },1000)
+    },[count])
+
+    useEffect(()=>{
+        let timer = setInterval (() =>{
+            setCount2(count=>count+1)
+        },1000)
+        return () => clearInterval(timer)
+    },[count])
 
   return (
     <div>
