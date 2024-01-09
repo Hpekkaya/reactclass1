@@ -3,7 +3,7 @@ import React from 'react'
 const Car = (props) => {
   return (
     <li>
-        {props.value +1} {props.brand} ..
+        {props.value +1} {props.brand} = 
     </li>
   )
 }
