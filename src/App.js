@@ -5,7 +5,7 @@ import Events from "./3-Events/Events";
 import Conditionals from "./4-Conditionals/Conditionals";
 import List from "./5-List/List";
 import UseStateHook from "./6-UseStateHook/UseStateHook";
-import UseEffectHook from "./UseEffectHook/UseEffectHook";
+import UseEffectHook from "./7-UseEffectHook/UseEffectHookok";
 // import './index.css';
 
 
@@ -19,7 +19,7 @@ function App() {
           {/* <Conditionals/> */}
           {/* <List/> */}
           {/* <UseStateHook/> */}
-          <UseEffectHook/>  {/* Management of the changes */}
+          {/* <UseEffectHook/>  Management of the changes */}
        </div>
       );
     }

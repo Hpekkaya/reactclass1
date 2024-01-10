@@ -27,11 +27,11 @@ const UseEffectHook = () => {
     // useEffect, which renders according to a dependency. 
     // it works once, then it works as the dependency changes
 
-    useEffect(()=>{
-        setInterval(()=>{
-            setCount(count=>count+1)
-        },1000)
-    },[count])
+    // useEffect(()=>{
+    //     setInterval(()=>{
+    //         setCount(count=>count+1)
+    //     },1000)
+    // },[count])   //It enter endless loop
 
     useEffect(()=>{
         let timer = setInterval (() =>{
