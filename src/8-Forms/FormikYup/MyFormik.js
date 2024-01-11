@@ -1,5 +1,6 @@
 import React from 'react'
 import { useFormik } from 'formik'
+import validations from './validations';
 
 const MyFormik = () => {
 
@@ -16,8 +17,9 @@ const MyFormik = () => {
         onSubmit: (values, bag) => {
             console.log(values)
             bag.resetForm();
-        }
-    })
+        },
+        validationSchema : validations
+    });
 
     return (
         <div>
