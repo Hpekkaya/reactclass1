@@ -2,9 +2,10 @@ import React, { useState } from "react";
 
 const Forms = () => {
   const [name, setName] = React.useState("Enter Name");
-
+  
   const [inputs, setInputs] = React.useState({});
-
+  
+  const [myCar, setmyCar] = React.useState("Volvo");
   // const handleSubmit =(event)=>{
   //   event.preventDefault();
   //   alert(`The name you entered was : ${name}`)
@@ -18,6 +19,9 @@ const Forms = () => {
     const handleSubmit2 = (event)=> {
       event.preventDefault();
       console.log(inputs)
+    }
+    const handleChange2 = (event)=>{
+            setmyCar(event.target.value)
     }
   return (
     <div>
@@ -46,8 +50,15 @@ const Forms = () => {
           name="age"
           value={inputs.age || ""}
           onChange={handleChange}
-        />
+        /><br></br>
         <input type="submit"/>
+      </form>
+      <form>
+        <select value={myCar} onChange={handleChange2}>
+          <option value="Ford">Ford</option>
+          <option value="Volvo">Volvo</option>
+          <option value="Honda">Honda</option>
+        </select>
       </form>
     </div>
   );
