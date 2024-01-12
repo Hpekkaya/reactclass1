@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MyFormik from "./FormikYup/MyFormik";
+import Form1 from "./Form1";
 
 const Forms = () => {
   // const [name, setName] = React.useState("Enter Name");
@@ -61,7 +62,8 @@ const Forms = () => {
           <option value="Honda">Honda</option>
         </select>
       </form> */}
-      <MyFormik/>
+      {/* <MyFormik/> */}
+      <Form1/>
     </div>
   );
 };
