@@ -1,6 +1,6 @@
 
 import JSX1 from "./1-JSX/JSX1"
-import Props from "./2-Props/Props";
+import Props1 from "./2-Props/Props1";
 import Events from "./3-Events/Events";
 import Conditionals from "./4-Conditionals/Conditionals";
 import List from "./5-List/List";
@@ -15,8 +15,8 @@ function App() {
     return (
        <div>
           {/* <p>This is the First React Application </p> */}
-          <JSX1/>
-          {/* <Props/> */}
+          {/* <JSX1/> */}
+          <Props1/>
           {/* <Events/> */}
           {/* <Conditionals/> */}
           {/* <List/> */}
