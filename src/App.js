@@ -1,7 +1,7 @@
 
 import JSX1 from "./1-JSX/JSX1"
 import Props1 from "./2-Props/Props1";
-import Events from "./3-Events/Events";
+import Events1 from "./3-Events/Events1";
 import Conditionals from "./4-Conditionals/Conditionals";
 import List from "./5-List/List";
 import UseStateHook from "./6-UseStateHook/UseStateHook";
@@ -16,8 +16,8 @@ function App() {
        <div>
           {/* <p>This is the First React Application </p> */}
           {/* <JSX1/> */}
-          <Props1/>
-          {/* <Events/> */}
+          {/* <Props1/> */}
+          <Events1/>
           {/* <Conditionals/> */}
           {/* <List/> */}
           {/* <UseStateHook/> */}
