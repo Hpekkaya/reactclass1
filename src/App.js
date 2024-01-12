@@ -1,5 +1,5 @@
 
-import JSX from "./1-JSX/JSX"
+import JSX1 from "./1-JSX/JSX1"
 import Props from "./2-Props/Props";
 import Events from "./3-Events/Events";
 import Conditionals from "./4-Conditionals/Conditionals";
@@ -15,14 +15,14 @@ function App() {
     return (
        <div>
           {/* <p>This is the First React Application </p> */}
-          {/* <JSX/> */}
+          <JSX1/>
           {/* <Props/> */}
           {/* <Events/> */}
           {/* <Conditionals/> */}
           {/* <List/> */}
           {/* <UseStateHook/> */}
           {/* <UseEffectHook/>  Management of the changes */}
-          <Forms/>  
+          {/* <Forms/>   */}
        </div>
       );
     }
