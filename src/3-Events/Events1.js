@@ -7,11 +7,7 @@ const Events1 = () => {
     const shoot2 =(a)=> {
         alert(a)
     }
-    const shoot3 = (a,b)=>{
-        alert(b.type)
-        console.log(b)
-        console.log(b.value)
-    }
+    
   return (
     <div>
         <button onClick={shoot}>Take the Shoot</button> <h6></h6>
