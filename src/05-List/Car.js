@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Car = (props) => {
+const Car = () => {
   return (
-    <li>
-        {props.value +1} {props.brand} = 
-    </li>
+    <div>Car</div>
   )
 }
 

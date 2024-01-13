@@ -1,12 +1,9 @@
 import React from 'react'
-import Garage from './Garage'
 
-const Lists = () => {
+const List = () => {
   return (
-    <div>
-        <Garage/>
-    </div>
+    <div>List</div>
   )
 }
 
-export default Lists
+export default List

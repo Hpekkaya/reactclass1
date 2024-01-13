@@ -18,8 +18,8 @@ function App() {
           {/* <JSX1/> */}
           {/* <Props1/> */}
           {/* <Events1/> */}
-          <Conditionals/>
-          {/* <List/> */}
+          {/* <Conditionals/> */}
+          <List/>
           {/* <UseStateHook/> */}
           {/* <UseEffectHook/>  Management of the changes */}
           {/* <Forms/>   */}
