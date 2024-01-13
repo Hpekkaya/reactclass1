@@ -1,8 +1,11 @@
 import React from 'react'
+import Goal from './Goal'
 
 const Conditionals = () => {
   return (
-    <div>Conditionals</div>
+    <div>
+        <Goal isGoal={true}/>
+    </div>
   )
 }
 
