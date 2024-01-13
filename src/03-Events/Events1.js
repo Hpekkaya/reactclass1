@@ -7,7 +7,14 @@ const Events1 = () => {
     const shoot2 =(a)=> {
         alert(a)
     }
-    
+    const shoot3 = (a,b)=> {
+      alert(b.type)
+      b.target.value = "Value is changed"
+
+      console.log(b.target)
+      console.log(b.target.value)
+      console.log(b)   //In order to see what type of base events 
+  }
   return (
     <div>
         <button onClick={shoot}>Take the Shoot</button> <h6></h6>
