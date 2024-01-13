@@ -1,12 +1,12 @@
 
-import JSX1 from "./1-JSX/JSX1"
-import Props1 from "./2-Props/Props1";
-import Events1 from "./3-Events/Events1";
-import Conditionals1 from "./4-Conditionals/Conditionals1";
-import List from "./5-List/List";
-import UseStateHook from "./6-UseStateHook/UseStateHook";
-import UseEffectHook from "./7-UseEffectHook/UseEffectHook";
-import Forms from "./8-Forms/Forms";
+import JSX1 from "./01-JSX/JSX1"
+import Props1 from "./02-Props/Props1";
+import Events1 from "./03-Events/Events1";
+import Conditionals1 from "./04-Conditionals/Conditionals1";
+import List from "./05-List/List";
+import UseStateHook from "./06-UseStateHook/UseStateHook";
+import UseEffectHook from "./07-UseEffectHook/UseEffectHook";
+import Forms from "./08-Forms/Forms";
 
 // import './index.css';
 
