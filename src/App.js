@@ -19,8 +19,8 @@ function App() {
           {/* <Props1/> */}
           {/* <Events1/> */}
           {/* <Conditionals/> */}
-          <List/>
-          {/* <UseStateHook/> */}
+          {/* <List/> */}
+          <UseStateHook/>
           {/* <UseEffectHook/>  Management of the changes */}
           {/* <Forms/>   */}
        </div>
