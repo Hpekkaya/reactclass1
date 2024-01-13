@@ -20,8 +20,8 @@ function App() {
           {/* <Events1/> */}
           {/* <Conditionals/> */}
           {/* <List/> */}
-          <UseStateHook/>
-          {/* <UseEffectHook/>  Management of the changes */}
+          {/* <UseStateHook/> */}
+          <UseEffectHook/>  {/*Management of the changes */}
           {/* <Forms/>   */}
        </div>
       );
