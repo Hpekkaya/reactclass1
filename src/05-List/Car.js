@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Car = () => {
+const Car = (props) => {
   return (
-    <div>Car</div>
+    <div>
+        <li>
+            {props.value+1} {props.brand}
+        </li>
+    </div>
   )
 }
 
