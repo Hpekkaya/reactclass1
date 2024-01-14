@@ -1,4 +1,6 @@
+import { Formik } from 'formik'
 import React, { useState } from 'react'
+import MyFormik from './FormikYup/MyFormik'
 
 const Forms = () => {
   const [name,setName]= useState()
@@ -26,7 +28,7 @@ const Forms = () => {
         </label> <br></br>
         <button type='submit'>Submit</button>        
       </form> */}
-      <form onSubmit={handleSubmit2}>
+      {/* <form onSubmit={handleSubmit2}>
         <label>
           Enter Your Name : <input type="text" name="username" value= {inputs.username || ""}
           onChange={handleChange} /><br></br>
@@ -43,7 +45,8 @@ const Forms = () => {
           <option value="Volvo">Volvo</option>
           <option value="Nissan">Nissan</option>
         </select>
-      </form>
+      </form> */}
+      <MyFormik/>
     </div>
   )
 }
