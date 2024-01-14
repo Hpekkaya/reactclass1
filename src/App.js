@@ -21,8 +21,8 @@ function App() {
           {/* <Conditionals/> */}
           {/* <List/> */}
           {/* <UseStateHook/> */}
-          <UseEffectHook/>  {/*Management of the changes */}
-          {/* <Forms/>   */}
+          {/* <UseEffectHook/>  Management of the changes */}
+          <Forms/>  
        </div>
       );
     }
