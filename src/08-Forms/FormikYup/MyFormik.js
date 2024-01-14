@@ -1,5 +1,6 @@
 import React from 'react'
 import { useFormik } from 'formik'
+import validations from "./validations"
 
 const MyFormik = () => {
     const {handleSubmit,handleChange,handleBlur,handleReset, errors,touched} = useFormik({
@@ -13,9 +14,11 @@ const MyFormik = () => {
             confirmPassword:""
         },
         onSubmit:(values,bag)=>{
-            // console.log(values),
-            // bag.resetForm()
-        }
+            console.log(values);
+            console.log(bag);
+            bag.resetForm();
+        },
+        validationSchema:validations
     })
   return (
     <div>
@@ -29,7 +32,7 @@ const MyFormik = () => {
             <label>Female</label>
             <input type='radio' name='gender' value='Female' onChange={handleChange}/> <br></br>
             
-            <label>Hobies</label><br></br>
+            <label>Hobies :</label><br></br>
             <label>Futball</label>
             <input type='checkbox' name='hobies' value='Football' onChange={handleChange}/> 
             <label>Travel</label>
@@ -48,6 +51,7 @@ const MyFormik = () => {
             <input type='password' name='password' placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
             <label>Confirm Password</label><br></br>
             <input type='password' name='confirmPassword' placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            <button type='submit'>Submit</button>
 
         </form>
     </div>
