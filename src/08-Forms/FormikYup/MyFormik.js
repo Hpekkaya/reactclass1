@@ -52,6 +52,7 @@ const MyFormik = () => {
             <label>Confirm Password</label><br></br>
             <input type='password' name='confirmPassword' placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
             <button type='submit'>Submit</button>
+            <button type='reset'>New Record</button>
 
         </form>
     </div>
