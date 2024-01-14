@@ -9,7 +9,7 @@ const Forms = () => {
     const value = event.target.value
     setInputs(values => ({...values, [name]:value}))
   }
-  const handleSubmit2 =(event)=>{
+  const handleSubmit2 =(event)=> {
     event.preventDefault();  
     console.log(inputs) }
 
