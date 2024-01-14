@@ -24,7 +24,10 @@ const MyFormik = () => {
     <div>
         <form onSubmit={handleSubmit}>
             <input type='text' name='name' placeholder='name' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            {errors.name && touched.name && <div style={{color:"red"}}>{errors.name}</div>}
+
             <input type='text' name='email' placeholder='email' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            {errors.email && touched.email && <div style={{color:"red"}}>{errors.email}</div>}
             
             <label>Gender :</label><br></br>
             <label>Male</label>
@@ -49,8 +52,12 @@ const MyFormik = () => {
             </select> <br></br>
             <label>Password</label><br></br>
             <input type='password' name='password' placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            {errors.password && touched.password && <div style={{color:"red"}}>{errors.password}</div>}
+
             <label>Confirm Password</label><br></br>
             <input type='password' name='confirmPassword' placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            {errors.confirmPassword && touched.confirmPassword && <div style={{color:"red"}}>{errors.confirmPassword}</div>}
+
             <button type='submit'>Submit</button>
             <button type='reset'>New Record</button>
 
