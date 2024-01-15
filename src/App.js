@@ -7,6 +7,7 @@ import List from "./05-List/List";
 import UseStateHook from "./06-UseStateHook/UseStateHook";
 import UseEffectHook from "./07-UseEffectHook/UseEffectHook";
 import Forms from "./08-Forms/Forms";
+import Router from "./09-Router/Router";
 
 // import './index.css';
 
@@ -22,7 +23,8 @@ function App() {
           {/* <List/> */}
           {/* <UseStateHook/> */}
           {/* <UseEffectHook/>  Management of the changes */}
-          <Forms/>  
+          {/* <Forms/>   */}
+          <Router/>
        </div>
       );
     }
