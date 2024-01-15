@@ -17,9 +17,15 @@ const Contact = () => {
       {/* <ul>
         {users.map((user)=><li key ={user.id}>{user.name}</li>)}
       </ul> */}
-      <ul>
+      {/* <ul>
         {users.map((user)=><li key ={user.id}>
           <Link to={`${user.id}`}>{user.name}</Link> 
+        
+        </li>)}
+      </ul> */}
+      <ul>
+        {users.map((user)=><li key ={user.id}>
+          <Link to={`${user.id}`} state={users}>{user.name}</Link> 
         
         </li>)}
       </ul>
