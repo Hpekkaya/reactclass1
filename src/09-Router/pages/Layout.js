@@ -6,6 +6,8 @@ const Layout = () => {
         backgroundColor: "black",
         color:"white"
     }
+
+    //
   return (
     <>
         <div>Layout</div>
