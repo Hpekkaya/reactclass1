@@ -3,7 +3,7 @@ import { useFormik } from 'formik'
 import validations from "./validations"
 
 const MyFormik = () => {
-    const {handleSubmit,handleChange,handleBlur,handleReset, errors,touched} = useFormik({
+    const {handleSubmit,handleChange,handleBlur,handleReset, errors,touched,values} = useFormik({
         initialValues : {
             name :"",
             email:"",
@@ -23,10 +23,10 @@ const MyFormik = () => {
   return (
     <div>
         <form onSubmit={handleSubmit}>
-            <input type='text' name='name' placeholder='name' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            <input type='text' name='name' value={values.name} placeholder='name' onChange={handleChange} onBlur={handleBlur}/> <br></br>
             {errors.name && touched.name && <div style={{color:"red"}}>{errors.name}</div>}
 
-            <input type='text' name='email' placeholder='email' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            <input type='text' name='email' value={values.email} placeholder='email' onChange={handleChange} onBlur={handleBlur}/> <br></br>
             {errors.email && touched.email && <div style={{color:"red"}}>{errors.email}</div>}
             
             <label>Gender :</label><br></br>
@@ -51,11 +51,11 @@ const MyFormik = () => {
                 <option value="Eng" >England</option>            
             </select> <br></br>
             <label>Password</label><br></br>
-            <input type='password' name='password' placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            <input type='password' name='password' value={values.password} placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
             {errors.password && touched.password && <div style={{color:"red"}}>{errors.password}</div>}
 
             <label>Confirm Password</label><br></br>
-            <input type='password' name='confirmPassword' placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
+            <input type='password' name='confirmPassword' value={values.confirmPassword} placeholder='pasw' onChange={handleChange} onBlur={handleBlur}/> <br></br>
             {errors.confirmPassword && touched.confirmPassword && <div style={{color:"red"}}>{errors.confirmPassword}</div>}
 
             <button type='submit'>Submit</button>
