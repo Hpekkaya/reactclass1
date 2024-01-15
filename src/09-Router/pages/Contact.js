@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   const [users,setUsers] = useState([])
@@ -11,10 +12,17 @@ const Contact = () => {
 
   return (
     <div>
-      <h2>Contact</h2>
-      <ol>
+      <h2>Contacts</h2>
+      <h4>In oreder to reach details click related name</h4>
+      {/* <ul>
         {users.map((user)=><li key ={user.id}>{user.name}</li>)}
-      </ol>
+      </ul> */}
+      <ul>
+        {users.map((user)=><li key ={user.id}>
+          <Link to={`${user.id}`}>{user.name}</Link> 
+        
+        </li>)}
+      </ul>
     </div>
   )
 }

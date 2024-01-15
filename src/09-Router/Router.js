@@ -4,6 +4,7 @@ import Layout from './pages/Layout'
 import Home from './pages/Home'
 import Blogs from './pages/Blogs'
 import Contact from './pages/Contact'
+import ContactDetails from './pages/ContactDetails'
 import NoPage from './pages/NoPage'
 
 const Router  = () => {
@@ -14,8 +15,8 @@ const Router  = () => {
             <Route index element={<Home/>}/>
             <Route path="blogs" element={<Blogs/>}/>
             <Route path="contact" element={<Contact/>}/>
+            <Route path="contact/:id" element={<ContactDetails/>}/>
             <Route path="*" element={<NoPage/>}/>
-            {/* <Route path="contact/:id" element={<ContactDetail/>}/> */}
         </Route>
         </Routes>
     
