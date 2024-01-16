@@ -31,17 +31,17 @@ const MyFormik = () => {
             
             <label>Gender :</label><br></br>
             <label>Male</label>
-            <input type='radio' name='gender' value='Male' onChange={handleChange}/> 
+            <input type='radio' name='gender' value='Male' checked={values.gender === 'male'} onChange={handleChange}/> 
             <label>Female</label>
-            <input type='radio' name='gender' value='Female' onChange={handleChange}/> <br></br>
+            <input type='radio' name='gender' value='Female' checked={values.gender === 'female'} onChange={handleChange}/> <br></br>
             
             <label>Hobies :</label><br></br>
             <label>Futball</label>
-            <input type='checkbox' name='hobies' value='Football' onChange={handleChange}/> 
+            <input type='checkbox' name='hobies' value='Football' checked={values.hobies.includes('Football')}  onChange={handleChange}/> 
             <label>Travel</label>
-            <input type='checkbox' name='hobies' value='Travel' onChange={handleChange}/> 
+            <input type='checkbox' name='hobies' value='Travel' checked={values.hobies.includes('Travel')} onChange={handleChange}/> 
             <label>Chess</label>
-            <input type='checkbox' name='hobies' value='Chess' onChange={handleChange}/> <br></br>
+            <input type='checkbox' name='hobies' value='Chess' checked={values.hobies.includes('Chess')} onChange={handleChange}/> <br></br>
 
             <label>Country</label><br></br>
             <select name='country' onChange={handleChange}>
@@ -59,7 +59,8 @@ const MyFormik = () => {
             {errors.confirmPassword && touched.confirmPassword && <div style={{color:"red"}}>{errors.confirmPassword}</div>}
 
             <button type='submit'>Submit</button>
-            <button type='reset'>New Record</button>
+            {/* <button type='reset'>New Record</button> */} {/* Not necessary at all  */}
+            
 
         </form>
     </div>

@@ -5,7 +5,7 @@ const ContactDetails = () => {
   const {id} = useParams()
   // const [user, setUser] = useState(null)
   
-  const location = useLocation;
+  const location = useLocation();
   const [user, setUser] = useState(location.state[Number(id)-1])
 
   // This fetch data each time 
@@ -16,9 +16,10 @@ const ContactDetails = () => {
     // },[id])
     
     // This fetch data only one time 
-  useEffect(()=>{
-    setUser(location.state[Number(id)-1])
-  },[location.state,id])
+
+    useEffect(()=>{
+      setUser(location.state[Number(id)-1])
+    },[location.state,id])
 
   return (
     <div>
@@ -35,8 +36,8 @@ const ContactDetails = () => {
       {/* <Link to= {`/contact/${Number(id)-1}`}>Previous User</Link> &emsp;
       <Link to= {`/contact/${Number(id)+1}`}>Next User</Link>  */}
 
-      <Link to= {`/contact/${Number(id)-1}`} state={location.state}>Previous User</Link> &emsp;
-      <Link to= {`/contact/${Number(id)+1}`} state={location.state}>Next User</Link> 
+        <Link to={`/contact/${Number(id) - 1 }`} state={location.state}>Previous User</Link> &emsp;
+        <Link to={`/contact/${Number(id) + 1 }`} state={location.state}>Next User</Link> 
     </div>
   )
 }
