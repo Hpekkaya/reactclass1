@@ -9,6 +9,7 @@ import UseEffectHook from "./07-UseEffectHook/UseEffectHook";
 import Forms from "./08-Forms/Forms";
 import Router from "./09-Router/Router";
 import UseContext from "./10-UseContext/UseContext";
+import CSSStyling from "./11-CSSStyling/CSSStyling";
 
 // import './index.css';
 
@@ -26,7 +27,8 @@ function App() {
           {/* <UseEffectHook/>  Management of the changes */}
           {/* <Forms/>   */}
           {/* <Router/> */}
-          <UseContext/>
+          {/* <UseContext/> */}
+          <CSSStyling/>
        </div>
       );
     }

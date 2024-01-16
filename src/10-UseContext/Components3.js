@@ -1,7 +1,10 @@
 import React, { useContext } from 'react'
 import { UserContext } from './UseContext'
 
-const Components3 = ({user}) => {
+// Before useContex
+// const Components3 = ({user}) => {
+
+const Components3 = () => {
     const user2 = useContext(UserContext)
   return (
     <div>

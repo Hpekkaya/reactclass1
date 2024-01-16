@@ -1,7 +1,11 @@
 import React from 'react'
 import Components2 from './Components2'
 
-const Components1 = ({user}) => {
+// Before useContex
+// const Components1 = ({user}) => {
+    
+// After useContex no needd to use {user}
+const Components1 = () => { 
   return (
     <div>
         <h1>Components1</h1> 
