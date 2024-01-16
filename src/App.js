@@ -24,7 +24,7 @@ function App() {
           {/* <UseStateHook/> */}
           {/* <UseEffectHook/>  Management of the changes */}
           {/* <Forms/>   */}
-          <Router/>
+          {/* <Router/> */}
        </div>
       );
     }
