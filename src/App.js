@@ -10,6 +10,7 @@ import Forms from "./08-Forms/Forms";
 import Router from "./09-Router/Router";
 import UseContext from "./10-UseContext/UseContext";
 import CSSStyling from "./11-CSSStyling/CSSStyling";
+import ReduxToolkit from "./12-ReduxToolkit/ReduxToolkit";
 
 // import './index.css';
 
@@ -28,7 +29,8 @@ function App() {
           {/* <Forms/>   */}
           {/* <Router/> */}
           {/* <UseContext/> */}
-          <CSSStyling/>
+          {/* <CSSStyling/> */}
+          <ReduxToolkit/>
        </div>
       );
     }
