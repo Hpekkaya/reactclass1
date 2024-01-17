@@ -6,9 +6,10 @@ import Counter from './counter/Counter'
 
 const ReduxToolkit = () => {
   return (
-    <Provider store={store}>
-        <Counter/>
+    <Provider store = {store}>
+      <Counter/>
     </Provider>
+
   )
 }
 
